@@ -11,6 +11,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   reactStrictMode: false,
+
   webpack: (config, { isServer }) => {
     if (isServer) {
       require('./scripts/sitemap-generator')
@@ -21,14 +22,6 @@ const nextConfig = {
     }
     return config
   },
-  
-
-}
-
-// Conditionally set the output based on the environment
-if (process.env.NEXT_PUBLIC_SEO === "false") {
-  nextConfig.output = 'export'
-  nextConfig.images.unoptimized = true
 }
 
 module.exports = nextConfig

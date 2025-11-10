@@ -250,7 +250,7 @@ const ContactUS = () => {
                         </div>
                         <div className="contact-deatils">
                           <p>{translate("officeAdd")}</p>
-                          <span>{systemsettings?.company_address}</span>
+                          <span>Lajpat Nagar</span>
                         </div>
                       </div>
                     </div>
@@ -265,10 +265,10 @@ const ContactUS = () => {
                         <div className="contact-deatils">
                           <p>{translate("tele")}</p>
                           <a
-                            href={`tel:${systemsettings?.company_tel1}`}
+                            href={`tel:9811797407`}
                             style={{ textDecoration: "none" }}
                           >
-                            <span>{systemsettings?.company_tel1}</span>
+                            <span>9811797407</span>
                           </a>
                           <a
                             href={`tel:${systemsettings?.company_tel2}`}
@@ -287,14 +287,15 @@ const ContactUS = () => {
                         <div className="contact-deatils">
                           <p>{translate("emailUs")}</p>
                           <a
-                            href={`mailto:${systemsettings?.company_email}`}
+                            href={`mailto:admin@broker.com`}
                             style={{ textDecoration: "none" }}
                           >
-                            <span>{systemsettings?.company_email}</span>
+                            <span>admin@broker.com</span>
                           </a>
                         </div>
                       </div>
                     </div>
+                    {/* 
                     {systemsettings?.facebook_id &&
                       systemsettings?.instagram_id &&
                       systemsettings?.twitter_id &&
@@ -364,7 +365,7 @@ const ContactUS = () => {
                             ) : null}
                           </div>
                         </div>
-                      )}
+                      )}*/}
                   </div>
                 </div>
               </div>

@@ -146,9 +146,6 @@ const Footer = () => {
                                 <span>{translate("pages")}</span>
                             </div>
                             <div className="page_links">
-                                <Link href="/subscription-plan">{translate("subscriptionPlan")}</Link>
-                            </div>
-                            <div className="page_links">
                                 <Link href="/articles">{translate("articles")}</Link>
                             </div>
                             <div className="page_links">
@@ -200,9 +197,10 @@ const Footer = () => {
                         <h6>{translate("Copyright")} {currentYear} {webdata?.company_name} {translate("All Rights Reserved")}</h6>
                     </div>
                     <div>
+                        {/*
                         {webdata?.facebook_id || webdata?.instagram_id || webdata?.youtube_id || webdata?.twitter_id ? (
                             <div>
-                                {/* <h4> {translate("followUs")}</h4> */}
+                                <h4> {translate("followUs")}</h4> 
                                 <div id="follow_us">
                                     <span>
                                     {translate("followUs")}
@@ -229,7 +227,7 @@ const Footer = () => {
                                     ) : null}
                                 </div>
                             </div>
-                        ) : (null)}
+                        ) : (null)} */}
                     </div>
                 </div>
             </div>
