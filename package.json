@@ -73,6 +73,7 @@
     "translation-key-purge": "^1.0.7"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.14.5",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "next-htaccess-generator": "^1.0.3"

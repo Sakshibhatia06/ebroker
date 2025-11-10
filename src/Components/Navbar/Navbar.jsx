@@ -296,13 +296,6 @@ const Nav = () => {
 
                     <Dropdown.Menu>
                       <Dropdown.Item>
-                        <Link href="/subscription-plan">
-                          <span className="links">
-                            {translate("subscriptionPlan")}
-                          </span>
-                        </Link>
-                      </Dropdown.Item>
-                      <Dropdown.Item>
                         {" "}
                         <Link href="/articles">
                           <span className="links">{translate("articles")}</span>
@@ -363,16 +356,16 @@ const Nav = () => {
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       {LanguageList &&
-                        LanguageList.map((ele, index) => (
-                          <Dropdown.Item
-                            key={index}
-                            onClick={() => handleLanguageChange(ele.code)}
-                          >
-                            <span className="perent_link">
-                              <span className="links">{ele.name}</span>
-                            </span>
-                          </Dropdown.Item>
-                        ))}
+  LanguageList
+    .filter((lang) => lang.name !== "Urdu") // remove English & Urdu
+    .map((ele, index) => (
+      <Dropdown.Item key={index} onClick={() => handleLanguageChange(ele.code)}>
+        <span className="perent_link">
+          <span className="links">{ele.name}</span>
+        </span>
+      </Dropdown.Item>
+    ))}
+
                     </Dropdown.Menu>
                   </Dropdown>
                   <li className="nav-item">

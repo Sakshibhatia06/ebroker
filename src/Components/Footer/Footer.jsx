@@ -59,8 +59,8 @@ const Footer = () => {
                                         </div>
                                         <div className="footer_contactus_deatils">
                                             <span className="footer_span">{translate("contactOne")}</span>
-                                            <a href={`tel:${webdata && webdata.company_tel1}`}>
-                                                <span className="footer_span_value">{webdata && webdata.company_tel1}</span>
+                                            <a href={`tel:9811797407`}>
+                                                <span className="footer_span_value">9811797407</span>
                                             </a>
                                         </div>
                                     </div>
@@ -175,14 +175,14 @@ const Footer = () => {
                             <div className="download_app_platforms">
                                 {webdata?.playstore_id ? (
                                     <div id="playstore_logo">
-                                        <a href={webdata?.playstore_id} target="_blank">
+                                        <a href="" target="_blank">
                                             <Image loading="lazy" src={playstore?.src} alt="no_img" className="platforms_imgs" width={0} height={0} style={{ width: "100%", height: "100%" }} onError={placeholderImage} />
                                         </a>
                                     </div>
                                 ) : null}
                                 {webdata?.appstore_id ? (
                                     <div id="appstore_logo">
-                                        <a href={webdata?.appstore_id} target="_blank">
+                                        <a href="" target="_blank">
                                             <Image loading="lazy" src={appstore?.src} alt="no_img" className="platforms_imgs" width={0} height={0} style={{ width: "100%", height: "100%" }} onError={placeholderImage} />
                                         </a>
                                     </div>
